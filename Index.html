@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AI Music Studio</title>
 
+<script src="https://cdn.jsdelivr.net/npm/@magenta/music@1.23.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/tone@14.7.77/build/Tone.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Music Studio 🎵</h1>
+
+<input id="prompt" placeholder="Describe music (happy piano, dark techno...)">
+
+<br>
+
+<button onclick="generateMusic()">Generate AI Music</button>
+<button onclick="playMusic()">Play</button>
+<button onclick="stopMusic()">Stop</button>
+<button onclick="downloadMIDI()">Download</button>
+
+<p id="status">Status: Ready</p>
+
+<canvas id="visualizer"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+  </html>
